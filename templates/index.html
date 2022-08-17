@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flask app</title>
+  
+</head>
+
+
+<body onload="typeWriter();init()">
+<div id="particles-js">
+<h1>文章生成支援デモ </h1>
+<h3>文章の続きを生成します。続きを生成したい最初の文章（30文字以上目安）を入力して、生成ボタンを押してください。</h3>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>    particlesJS.load("particles-js", "{{ url_for('static', filename='particles.json') }}",    function(){    console.log("particles.json has loaded");});</script>
+
+</body>
+</html>
+
